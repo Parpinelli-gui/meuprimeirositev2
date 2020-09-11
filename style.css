@@ -1,0 +1,234 @@
+html, body {
+    margin: 0;
+}
+header, section, footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+header {
+    background-color: black;
+    opacity: 70%;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo {
+    width: 215px;
+    position: absolute;
+    margin-left: -1%;
+    top: 4px;
+}
+#menutop {
+    float: right;
+    margin-right: 3%;
+    margin-top: 9px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+li {
+    float: left;
+    padding: 20 10 20 10;
+    list-style: none;
+}
+li:hover {
+    background-color: rgb(34, 177, 76);
+}
+#capa {
+    background: url(capa.jpg);
+    background-size: cover;
+    height: 70%;
+    text-align: center;
+    font-style: italic;
+}
+#titulo {
+    color: rgb(34, 177, 76);
+    padding-top: 15%;
+    line-height: 0.6;
+    font-size: 75px;
+}
+#comecar {
+    border-top: 2px rgb(34, 177, 76) solid;
+    border-right: 2px rgb(34, 177, 76) solid;
+    font-size: 40px;
+    padding: 15px;
+}
+#comecar:hover {
+    color: rgb(34, 177, 76);
+}
+#inicio{
+    height: 30%;
+    text-align: center;
+    float: none !important;
+}
+#inicio-texto{
+    margin-top: 5%;
+}
+iframe { 
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+#secaoinfo {
+    width: 100%;
+    text-align: center;
+}
+.icone {
+    width: 51px;
+}
+.icone:hover {
+    width: 61px
+}
+section {
+    float: left;
+}    
+.divisao {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+}
+.direita {
+    float: right;
+    margin-right: 3%;
+    margin-top: 2%;
+    padding-right: 6px;
+}
+.x {
+    width: 15%;
+    text-align: center;
+}
+.titulosecs {
+    border-radius: 10px;
+    margin: 3% 30% 3% 30%;
+    padding: 10px;
+}
+.secstitulo {
+    margin: 3% 30% 10 30%;
+}
+.secssobre {
+    padding: 5px;
+}
+.titulossaiba {
+    margin: 0 30% 0 30%;
+}
+.secscinza {
+    background-color: #f7f7f7;
+}
+.h4praticas {
+    margin: 3% 30% 10px 30%;
+}
+#suaparte {
+    padding-bottom: 3%;
+}
+#programa_sobre {
+    padding: 8px;
+}
+#sobreh3 {
+    margin-bottom: 0;
+}
+.espaçamento {
+    margin: 5px 20% 5px 20%;
+}
+.fundobranco {
+    background-color: white;
+}
+.fundocinza {
+    background-color: #f7f7f7;
+}
+.textojustificado {
+    text-align: justify;
+}
+.textocentralizado {
+    text-align: center;
+}
+.borda {
+    border-radius: 10px;
+}
+.bordabaixo {
+    border-bottom: 2px rgb(34, 177, 76) solid;
+}
+.margemsobre{
+    margin: 5% 20% 5% 20%;
+}
+#p_imagens {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 25% 0 25%;
+}
+.img {
+    width: 50%;
+    height: 50%;
+}
+footer {
+    background-color: rgb(34, 177, 76);
+    opacity: 85%;
+    float: left;
+    width: 100%;
+    color: white;
+}
+.rodape {
+    margin-left: 3%;
+}
+.linkrodape{
+    text-decoration: underline;
+    color: #d5f5d1;
+}
+/*responsivo 1024*/
+@media all and (max-width: 1024px){
+    iframe {
+        width: 40%;
+        height: 40%;
+    }
+    .img {
+        width: 50%;
+        height: 30%;
+    }
+    #titulo {
+        padding-top: 30%;
+    }
+}
+/*responsivo*/
+@media all and (max-width: 768px){
+    #menutop {
+        visibility: hidden;
+    }
+    .divisao, .direita, .x {
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+        text-align: center;
+    }
+    .img {
+        height: 25%;
+        width: 60%;
+    }
+    #logotop {
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+    #logo {
+        margin-left: 0;
+        position: relative;
+    }
+    #titulo {
+        padding-top: 40%;
+        font-size: 50px;
+    }
+    .titulosecs {
+        border-radius: 10px;
+        margin: 3% 10% 3% 10%;
+        padding: 10px;
+    }
+    .secstitulo {
+        margin: 3% 10% 10 10%;
+    }
+    iframe {
+        width: 80%;
+        height: 70%;
+    }
+}
